@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Dentist in Encino - Same-Day Relief | Encino Family Dental</title>
+    <meta name="description" content="Same-day emergency dental care in Encino. Call (818) 600-6866 for urgent tooth pain, broken teeth, infections, and more. Gentle, judgment-free care.">
+    
+    <!-- Custom CSS for Emergency Landing Page -->
+    <style>
+        /* ============================================
+           EMERGENCY DENTIST LANDING PAGE STYLES
+           Add these styles to your theme or keep inline
+           ============================================ */
+        
+        :root {
+            /* Colors matching Encino Family Dental website */
+            --primary-blue: #0073aa;
+            --primary-blue-dark: #005a87;
+            --accent-teal: #00a8cc;
+            --accent-cyan: #4fc3f7;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f5f5f5;
+            --bg-white: #ffffff;
+            --success-green: #00b894;
+            --border-light: #e0e0e0;
+            --link-color: #0073aa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+        
+        /* Link styling to match site */
+        a:not(.btn) {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        a:not(.btn):hover {
+            text-decoration: underline;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            color: var(--text-dark);
+        }
+        
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--primary-blue);
+        }
+        
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            min-height: 50px;
+            line-height: 1.2;
+        }
+        
+        .btn-primary {
+            background-color: var(--success-green);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #229954;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--primary-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 90, 142, 0.3);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+        
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        @media (min-width: 768px) {
+            .btn-group {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .hero .container {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 3rem;
+                max-width: 1200px;
+            }
+            .hero {
+                padding: 4rem 2rem;
+                text-align: left;
+            }
+        }
+        
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-content {
+                margin: 0;
+                flex: 1;
+                max-width: 600px;
+            }
+        }
+        
+        .hero h1 {
+            margin-bottom: 1rem;
+        }
+        
+        .hero-subheadline {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        .trust-bullets {
+            list-style: none;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        
+        .trust-bullets li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        
+        .trust-bullets li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            margin: 2rem auto 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        @media (min-width: 768px) {
+            .hero-image {
+                margin: 2rem 0 0 0;
+                max-width: 350px;
+                flex-shrink: 0;
+                align-self: flex-start;
+            }
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        .reassurance-text {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+        
+        /* Offers Section */
+        .offers-section {
+            padding: 3rem 1rem;
+            background-color: var(--bg-light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .offers-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .offers-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .offer-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .offer-card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
+        
+        .offer-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .offer-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        
+        .offer-card p {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .offer-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--success-green);
+            margin: 1rem 0;
+        }
+        
+        .offer-note {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
+        .offer-card .btn {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        /* Symptoms Grid */
+        .symptoms-section {
+            padding: 3rem 1rem;
+        }
+        
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        @media (min-width: 640px) {
+            .symptoms-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .symptoms-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .symptom-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border: 1px solid #e8e8e8;
+        }
+        
+        .symptom-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            border-color: var(--accent-teal);
+        }
+        
+        .symptom-icon {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            background: linear-gradient(135deg, var(--accent-teal) 0%, var(--primary-blue) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .symptom-card p {
+            margin: 0;
+            font-weight: 500;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+        
+        .symptom-reassurance {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .symptom-reassurance h3 {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Why Choose Section */
+        .why-choose-section {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, rgba(0, 115, 170, 0.95) 0%, rgba(0, 90, 135, 0.95) 100%), url('https://encinofamilydental.com/wp-content/uploads/quote-bg_09.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .why-choose-section {
+                background-attachment: scroll;
+            }
+        }
+        
+        .why-choose-section h2 {
+            color: white;
+            text-align: center;
+        }
+        
+        .differentiators {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (min-width: 768px) {
+            .differentiators {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .differentiator {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 6px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .differentiator h3 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .differentiator p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        .rating-strip {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 6px;
+        }
+        
+        .rating-strip .stars {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .rating-strip p {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        /* Process Section */
+        .process-section {
+            padding: 3rem 1rem;
+            background-color: var(--bg-light);
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (min-width: 768px) {
+            .process-steps {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .process-step-image {
+            width: 100%;
+            max-width: 200px;
+            height: 150px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 8px;
+            margin: 0 auto 1rem;
+            display: block;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+        
+        .process-step h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .process-step p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        .reassurance-block {
+            background: white;
+            border-left: 4px solid var(--accent-teal);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+        
+        .reassurance-block p {
+            margin: 0;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        /* Insurance Section */
+        .insurance-section {
+            padding: 3rem 1rem;
+        }
+        
+        .insurance-list {
+            list-style: none;
+            max-width: 600px;
+            margin: 1.5rem auto;
+        }
+        
+        .insurance-list li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .insurance-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        /* Reviews Section */
+        .reviews-section {
+            padding: 3rem 1rem;
+            background-color: var(--bg-light);
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (min-width: 768px) {
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .review-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .review-stars {
+            color: #ffd700;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .review-text {
+            color: var(--text-gray);
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .review-author {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 3rem 1rem;
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        
+        .faq-item {
+            background: var(--bg-light);
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+        
+        /* Sticky Mobile Call Bar */
+        .sticky-call-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+            z-index: 1000;
+            padding: 0.75rem 1rem;
+        }
+        
+        @media (max-width: 767px) {
+            .sticky-call-bar {
+                display: flex;
+                gap: 0.75rem;
+            }
+        }
+        
+        .sticky-call-bar .btn {
+            flex: 1;
+            padding: 0.875rem 1rem;
+            font-size: 0.95rem;
+            min-height: 48px;
+        }
+        
+        .sticky-call-bar .btn-primary {
+            background-color: var(--success-green);
+        }
+        
+        /* Spacing for sticky bar */
+        @media (max-width: 767px) {
+            body {
+                padding-bottom: 80px;
+            }
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+        
+        .mt-2 {
+            margin-top: 2rem;
+        }
+        
+        /* Tel link styling */
+        a[href^="tel:"] {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Emergency Dentist in Encino – Same-Day Relief for Tooth Pain</h1>
+                <p class="hero-subheadline">Call now to speak with our team. We offer same-day emergency visits, gentle care, and options that fit your budget.</p>
+                
+                <ul class="trust-bullets">
+                    <li>Same-day and next-day emergency appointments</li>
+                    <li>Toothaches, broken teeth, infections, swelling</li>
+                    <li>Gentle, judgment-free care</li>
+                    <li>Most PPO insurances accepted</li>
+                    <li>Financing options available</li>
+                </ul>
+                
+                <div class="btn-group">
+                    <a href="tel:18186006866" class="btn btn-primary">Call Now for Emergency Help</a>
+                    <a href="https://encinofamilydental.com/contact-us/" class="btn btn-secondary">Request Emergency Appointment</a>
+                </div>
+                
+                <p class="reassurance-text">Not sure if it's a true emergency? Call and we'll guide you.</p>
+            </div>
+            
+            <div class="hero-image">
+                <img src="https://www.xiteco.com/wp-content/uploads/2021/03/dental-clinic-for-lease-San-Antonio-Tx_Xite-Realty.jpg" alt="Encino Family Dental Office - Emergency Dentist in Encino">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: URGENT OFFERS / SPECIALS -->
+    <section class="offers-section">
+        <div class="container">
+            <h2 class="section-title">Emergency Care That Fits Your Needs</h2>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://encinofamilydental.com/wp-content/uploads/elementor/thumbs/doc_08-p86571d8kjktpfvo8as9w6pr8uv1bnpsucmwnhdpdk.jpg" alt="Emergency dental exam" class="offer-card-image">
+                    <h3>Emergency Exam & X-Ray</h3>
+                    <p>New emergency patients receive a comprehensive exam and necessary X-rays. We'll identify the problem and explain your treatment options clearly.</p>
+                    <a href="tel:18186006866" class="btn btn-outline">Call Now</a>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="https://encinofamilydental.com/wp-content/uploads/89-Focused-consultation-for-a-specific-concernlocalized-issue.jpg" alt="Same-day emergency dental care" class="offer-card-image">
+                    <h3>Same-Day Pain Relief Visit</h3>
+                    <p>We focus first on getting you comfortable and out of pain today. Treatment options and costs are clearly explained before we proceed.</p>
+                    <a href="tel:18186006866" class="btn btn-outline">Call Now</a>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="https://encinofamilydental.com/wp-content/uploads/129-Comprehensive-consultation-including-full-exam-full-set-of-X-rays-and-BASIC-cleanin.jpg" alt="Dental insurance and payment options" class="offer-card-image">
+                    <h3>We Work With Your Budget</h3>
+                    <p>We accept most PPO insurance plans and offer flexible payment options for out-of-pocket costs.</p>
+                    <a href="tel:18186006866" class="btn btn-outline">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: IS THIS A DENTAL EMERGENCY? -->
+    <section class="symptoms-section">
+        <div class="container">
+            <h2 class="section-title">Is This a Dental Emergency?</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 2rem; color: var(--text-gray);">If you're experiencing any of these symptoms, we can help you get relief today.</p>
+            
+            <div class="symptoms-grid">
+                <div class="symptom-card">
+                    <div class="symptom-icon">🦷</div>
+                    <p>Severe toothache that won't go away</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">💔</div>
+                    <p>Cracked, chipped, or broken tooth</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">😣</div>
+                    <p>Swollen face or jaw</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">⚠️</div>
+                    <p>Pus or bump on the gums</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">🦷</div>
+                    <p>Knocked-out tooth</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">🔧</div>
+                    <p>Filling or crown fell out</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">🩸</div>
+                    <p>Bleeding that won't stop</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">🦷</div>
+                    <p>Wisdom tooth pain</p>
+                </div>
+                <div class="symptom-card">
+                    <div class="symptom-icon">😰</div>
+                    <p>Jaw pain or constant headaches from clenching</p>
+                </div>
+            </div>
+            
+            <div class="symptom-reassurance">
+                <h3>Not sure if it's an emergency?</h3>
+                <p>If you're in pain, uncomfortable, or worried, call us. We'll help you decide what to do next.</p>
+                <a href="tel:18186006866" style="color: var(--link-color); font-weight: 600; text-decoration: none; margin-top: 0.5rem; display: inline-block;">Call now: (818) 600-6866</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: WHY CHOOSE ENCINO FAMILY DENTAL -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2>Why Choose Encino Family Dental for Emergencies</h2>
+            
+            <div class="rating-strip">
+                <div class="stars">★★★★★</div>
+                <p>5.0 ★ Patient Rating</p>
+            </div>
+            
+            <div class="differentiators">
+                <div class="differentiator">
+                    <h3>Same-Day Emergency Visits</h3>
+                    <p>We make every effort to see you the same day you call, whenever possible.</p>
+                </div>
+                <div class="differentiator">
+                    <h3>Gentle, Judgment-Free Care</h3>
+                    <p>We know you might have avoided the dentist. We're here to help, not judge.</p>
+                </div>
+                <div class="differentiator">
+                    <h3>Modern, Comfortable Office</h3>
+                    <p>State-of-the-art technology in a calm, welcoming environment.</p>
+                </div>
+                <div class="differentiator">
+                    <h3>Clear, Upfront Communication</h3>
+                    <p>We explain treatment options and costs clearly before we proceed.</p>
+                </div>
+                <div class="differentiator">
+                    <h3>Trusted Local Dentist</h3>
+                    <p>Dr. Marian Yassa has been serving Encino and the San Fernando Valley for years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: WHAT TO EXPECT -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">What to Expect at Your Emergency Visit</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 2rem; color: var(--text-gray);">We make the process simple and stress-free.</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?w=400&h=300&fit=crop" alt="Call for emergency appointment" class="process-step-image">
+                    <div class="step-number">1</div>
+                    <h3>Call Us or Request an Appointment</h3>
+                    <p>We'll ask about your pain and symptoms and find the fastest time to see you.</p>
+                </div>
+                <div class="process-step">
+                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&h=300&fit=crop" alt="Dental exam and X-ray" class="process-step-image" style="filter: brightness(1.1) saturate(1.1);">
+                    <div class="step-number">2</div>
+                    <h3>Come in for a Gentle Exam & X-Ray</h3>
+                    <p>We identify the exact cause of your pain and walk you through options.</p>
+                </div>
+                <div class="process-step">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&fit=crop" alt="Get pain relief" class="process-step-image">
+                    <div class="step-number">3</div>
+                    <h3>Get Relief and a Clear Plan</h3>
+                    <p>We focus on getting you out of pain today and explain any longer-term treatment if needed.</p>
+                </div>
+            </div>
+            
+            <div class="reassurance-block">
+                <p><strong>We understand dental anxiety.</strong> We explain every step, use gentle techniques, and make sure you feel heard. Your comfort is our priority.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: INSURANCE & PAYMENT -->
+    <section class="insurance-section">
+        <div class="container">
+            <h2 class="section-title">Insurance & Payment Options</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 2rem; color: var(--text-gray);">We make it easy to get the care you need.</p>
+            
+            <ul class="insurance-list">
+                <li>Most PPO dental insurance plans accepted</li>
+                <li>We help you understand your benefits before treatment</li>
+                <li>Flexible payment options available for out-of-pocket costs</li>
+            </ul>
+            
+            <div class="text-center mt-2">
+                <p style="margin-bottom: 1rem; color: var(--text-gray);">Call us with your insurance details and we'll check your benefits:</p>
+                <a href="tel:18186006866" class="btn btn-primary">Call (818) 600-6866</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: PATIENT REVIEWS -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Encino Patients Trust Dr. Yassa With Their Smiles</h2>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Dr. Yassa is amazing! She is so thorough, patient and very professional. Takes time to explain the procedures to help reduce anxiety. She is the dentist for our entire family, and the boys love her!!"</p>
+                    <p class="review-author">— Dave C.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I have seriously been all over the valley, to some awful butcher dentists over the years. Thank goodness for Dr. Yassa! I'd been avoiding going for over 2 years, my anxiety was through the roof! Dr. Yassa treated me so very kind and was so very personable. I will be going back and I will be referring my friends."</p>
+                    <p class="review-author">— Tara B.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I have had plenty of Dentist's over the years but none are as good as this one. I found it through a friend and hands down it's the best. The staff is great and very welcoming. I love the TV screens above your head as it keeps your mind on something other then the work being done. Also all the equipment is state of the art."</p>
+                    <p class="review-author">— Craig W.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you see me today?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we make every effort to see emergency patients the same day they call. Call us at (818) 600-6866 and we'll find the fastest available appointment for you.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What if I don't have dental insurance?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible payment options for patients without insurance. We'll work with you to find a payment plan that fits your budget. Call us to discuss your options.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer help for severe tooth pain at night or weekends?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Call us at (818) 600-6866 and we'll help you figure out the best next step. We'll assess your situation and guide you on whether you need immediate care or can wait until our next available appointment.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Will you just pull my tooth?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our goal is always to save your natural tooth when possible. We'll explore all treatment options with you and only recommend extraction if it's truly necessary. We'll explain everything clearly so you can make an informed decision.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is it better to go to the ER or a dentist for tooth pain?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For most dental emergencies, a dentist is the better choice. ERs can provide pain medication but can't treat the underlying dental problem. We can address the root cause and get you lasting relief. If you're experiencing severe swelling that affects breathing or swallowing, go to the ER immediately.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How much will my emergency visit cost?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Costs vary depending on your specific situation and treatment needs. We'll provide a clear estimate after your exam and X-ray, and we'll check your insurance benefits if you have coverage. Call us at (818) 600-6866 and we'll help you understand your options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FINAL CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Get Out of Pain – Call Our Encino Emergency Dentist Now</h2>
+            <p>We're here to help you get comfortable again, quickly and gently.</p>
+            
+            <div class="btn-group">
+                <a href="tel:18186006866" class="btn btn-primary">Call Now – (818) 600-6866</a>
+                <a href="https://encinofamilydental.com/contact-us/" class="btn btn-secondary">Request Emergency Appointment</a>
+            </div>
+            
+            <div style="margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <img src="https://www.xiteco.com/wp-content/uploads/2021/03/dental-clinic-for-lease-San-Antonio-Tx_Xite-Realty.jpg" alt="Encino Family Dental Office" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 1rem;">
+            </div>
+            
+            <p style="margin-top: 1rem; font-size: 0.95rem; opacity: 0.9;">
+                <strong>Encino Family Dental</strong><br>
+                16550 Ventura Blvd, Suite #316, Encino, CA 91436<br>
+                Serving Encino, Sherman Oaks, Tarzana, and the San Fernando Valley
+            </p>
+        </div>
+    </section>
+
+    <!-- STICKY MOBILE CALL BAR -->
+    <div class="sticky-call-bar">
+        <a href="tel:18186006866" class="btn btn-primary">Call Now – (818) 600-6866</a>
+        <a href="https://encinofamilydental.com/contact-us/" class="btn btn-secondary">Request Appointment</a>
+    </div>
+
+</body>
+</html>
+
