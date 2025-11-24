@@ -1,0 +1,17 @@
+Subject: Emergency Dentist Landing Page Ready for Integration
+
+Team,
+
+The emergency dentist landing page is ready and deployed here:
+https://encino-dental-emer-lp-egfw.vercel.app/
+
+Please integrate this into the main site. IMPORTANT: Add the site's header and footer to this landing page so it matches the rest of the site and can be used as a native page.
+
+The HTML file is in the repo: emergency-dentist-landing.html
+
+Let me know once it's live with header/footer installed.
+
+Thanks.
+
+
+
